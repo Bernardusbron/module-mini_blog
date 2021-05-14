@@ -37,7 +37,7 @@ class Index extends BackendBaseActionIndex
     /**
      * Execute the action.
      */
-    public function execute()
+    public function execute(): void
     {
         parent::execute();
 
@@ -87,7 +87,7 @@ class Index extends BackendBaseActionIndex
     /**
      * Parse all datagrids.
      */
-    protected function parse()
+    protected function parse(): void
     {
         // parse the datagrid for all blogposts
         if ($this->dgPublished->getNumResults() != 0) {

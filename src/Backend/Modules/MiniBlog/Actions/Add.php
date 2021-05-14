@@ -22,8 +22,9 @@ class Add extends BackendBaseActionAdd
 {
     /**
      * Execute the action.
+     * AANPASSING !!! : void aan execute toegevoegd
      */
-    public function execute()
+    public function execute(): void
     {
         parent::execute();
 

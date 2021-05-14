@@ -25,7 +25,7 @@ class Edit extends BackendBaseActionEdit
     /**
      * Execute the action.
      */
-    public function execute()
+    public function execute(): void
     {
         $this->id = $this->getParameter('id', 'int');
 
@@ -76,7 +76,7 @@ class Edit extends BackendBaseActionEdit
     /**
      * Parse the form.
      */
-    protected function parse()
+    protected function parse(): void
     {
         parent::parse();
 
